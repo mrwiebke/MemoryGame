@@ -1,0 +1,79 @@
+#game-container .cardContainer {
+  border-radius: 5px;
+  position: relative;
+}
+
+#game-container .cardContainer {
+  border-radius: 5px;
+  position: relative;
+}
+
+#game-container{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+  gap: 15px;
+  justify-content: center;
+}
+
+body {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);  
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Rubik Pixels', cursive;
+  font-size: 4rem;
+}
+
+#flip-count {
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+}
+
+#stopwatch{
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+}
+
+#start-game{
+  position: relative;
+}
+
+#dogImage, #question {
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: transform 1.5s ease-out;
+  backface-visibility: hidden;
+  position: absolute; top: 0; left: 0; /*this stacks the question mark and dog images */
+}  
+
+  .cardContainer.flipped #question{
+    transform: rotateY(180deg);
+
+  }
+
+  .cardContainer.flipped #dog{
+    transform: rotateY(0deg);
+  }
+
+  #result {
+    text-align: center;
+    position: fixed;
+    top: 35%;
+    left: 45%;
+  }
+  #result h2 {
+    font-size: 2.5em;
+  }
+  #result h4 {
+    font-size: 1.8em;
+    margin: 0.6em 0 1em 0;
+  }
+
+  .hide{
+    visibility: hidden;
+  }
